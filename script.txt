@@ -1,0 +1,713 @@
+ HTML CSS Tutorial IN Bengali
+```
+HTML PART
+```
+
+🔹 ১. HTML শিখি (Starting with HTML) [সময়ঃ ১৫ মিনিট]
+
+🎤 "HTML হল ওয়েবসাইট তৈরির মৌলিক ভাষা, যা ওয়েবপেজের স্ট্রাকচার তৈরি করে। চলো, প্রথমে একটি সাধারণ HTML পেজ তৈরি করি।"
+
+📌 কোড: HTML ফাইল তৈরি
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple website using HTML.</p>
+</body>
+</html>
+
+📌 HTML কী ও কেন প্রয়োজন?
+
+HTML (HyperText Markup Language) ওয়েবপেজের স্ট্রাকচার তৈরি করতে ব্যবহৃত হয়।
+
+এটি বিভিন্ন ট্যাগ ব্যবহার করে কন্টেন্ট প্রদর্শন করে।
+
+
+📌 HTML Structure
+
+<!DOCTYPE html> → HTML ডকুমেন্টকে চিহ্নিত করে।
+
+<html> → পুরো ওয়েবপেজের মূল কন্টেনার।
+
+<head> → মেটাডেটা, টাইটেল ও অন্যান্য ইনফরমেশন রাখে।
+
+<body> → ওয়েবপেজের দৃশ্যমান অংশ।
+
+
+📌 প্রাথমিক ট্যাগসমূহ:
+
+<h1> - <h6> → হেডিং
+
+<p> → প্যারাগ্রাফ
+
+<br> → লাইন ব্রেক
+
+<a> → লিঙ্ক
+
+<img> → ইমেজ
+
+<ul>, <ol>, <li> → লিস্ট
+
+
+
+---
+
+🔹 ২. HTML এ আরও কিছু গুরুত্বপূর্ণ বিষয় [সময়ঃ ১৫ মিনিট]
+
+🎤 "HTML এ কিছু অ্যাডভান্সড বিষয় শিখি যেমন টেবিল, ফর্ম, এবং মিডিয়া এলিমেন্ট।"
+
+📌 HTML Lists:
+
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+
+<ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+</ol>
+
+📌 HTML Table:
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>25</td>
+    </tr>
+</table>
+
+📌 HTML Form:
+
+<form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+</form>
+
+
+---
+
+🔹 ৩. একটি ছোট HTML প্রজেক্ট (Basic Website without CSS) [সময়ঃ ৩০ মিনিট]
+
+🎤 "এখন পর্যন্ত শিখে যা, তা ব্যবহার করে একটি ছোট HTML প্রজেক্ট তৈরি করবো।"
+
+📌 কোড:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple website built using HTML.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+</html>
+
+
+---
+ ```
+CSS
+```
+
+🔹 ৪. CSS শেখা শুরু (Basics of CSS) [সময়ঃ ২০ মিনিট]
+
+🎤 "আমরা এখন CSS নিয়ে আলোচনা করবো। CSS (Cascading Style Sheets) মূলত ওয়েবসাইটের স্টাইল ও লেআউট নির্ধারণ করে। HTML আমাদের ওয়েবসাইটের স্ট্রাকচার তৈরি করে, কিন্তু সেটাকে সুন্দর দেখানোর জন্য CSS দরকার।"
+
+
+---
+
+CSS কী এবং কেন প্রয়োজন?
+
+✅ CSS এর কাজ:
+
+ওয়েবপেজের লেআউট কাস্টমাইজ করা
+
+টেক্সট, কালার, ফন্ট, ব্যাকগ্রাউন্ড স্টাইলিং
+
+এলিমেন্টগুলোর স্পেসিং, মার্জিন, ও পজিশনিং
+
+রেস্পন্সিভ ডিজাইন তৈরি করা
+
+
+✅ CSS ব্যবহার না করলে কেমন দেখাবে?
+CSS ছাড়া ওয়েবসাইট দেখতে একেবারে সাধারণ হবে, যেখানে শুধুমাত্র কালো লেখা ও সাদামাটা ডিজাইন থাকবে। CSS ব্যবহারের মাধ্যমে আমরা এটিকে আকর্ষণীয় ও ব্যবহারযোগ্য করে তুলতে পারি।
+
+
+---
+
+CSS এর সিনট্যাক্স (CSS Syntax)
+
+🎤 "CSS-এ তিনটি জিনিস খুবই গুরুত্বপূর্ণ – সিলেক্টর (Selector), প্রোপার্টি (Property), এবং ভ্যালু (Value)।"
+
+📌 CSS কোডের গঠন:
+
+selector {
+    property: value;
+}
+
+✅ ব্রেকডাউন:
+
+Selector → কোন HTML এলিমেন্টে স্টাইল অ্যাপ্লাই হবে (যেমন h1, p, div)
+
+Property → কী পরিবর্তন করা হবে (যেমন color, font-size, background)
+
+Value → কেমন হবে পরিবর্তনটি (যেমন red, 20px, blue)
+
+
+📌 উদাহরণ:
+
+h1 {
+    color: blue; /* h1 হেডিং এর কালার নীল হবে */
+    font-size: 24px; /* ফন্ট সাইজ ২৪ পিক্সেল হবে */
+}
+
+
+---
+
+CSS কীভাবে যোগ করা হয়?
+
+🎤 "HTML এর সাথে CSS সংযুক্ত করার তিনটি উপায় আছে।"
+
+📌 ১. Inline CSS (একই HTML ট্যাগের মধ্যে স্টাইল দেওয়া হয়)
+
+<p style="color: red;">This is red text</p>
+
+✅ এটি ছোটখাট স্টাইল পরিবর্তনের জন্য উপযোগী, তবে বড়ো প্রোজেক্টে ব্যবহার করা হয় না।
+
+📌 ২. Internal CSS (HTML এর মধ্যে <style> ট্যাগ ব্যবহার করা হয়)
+
+<style>
+    h1 {
+        color: green;
+        font-size: 30px;
+    }
+</style>
+
+✅ এটি ছোট ওয়েবসাইটের জন্য ব্যবহার করা যেতে পারে, তবে বড়ো প্রোজেক্টের জন্য সেরা পদ্ধতি নয়।
+
+📌 ৩. External CSS (ভিন্ন .css ফাইল ব্যবহার করা হয়, যা HTML ফাইলে লিঙ্ক করা হয়)
+✅ এটি সবচেয়ে ভালো পদ্ধতি, কারণ এতে কোড পরিষ্কার থাকে এবং সহজে মেইনটেন করা যায়।
+
+External CSS ফাইল (style.css)
+
+body {
+    background-color: lightgray;
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+HTML ফাইলে CSS লিঙ্ক করা:
+
+<link rel="stylesheet" href="style.css">
+
+
+---
+
+CSS এর গুরুত্বপূর্ণ প্রপার্টি ও তাদের কাজ
+
+🎤 "এখন আমরা CSS এর কিছু গুরুত্বপূর্ণ প্রোপার্টি শিখবো।"
+
+📌 ১. Text Styling (ফন্ট এবং টেক্সট স্টাইল করা)
+
+p {
+    font-family: Arial, sans-serif; /* ফন্ট সেট করা */
+    font-size: 18px; /* ফন্ট সাইজ নির্ধারণ */
+    color: darkblue; /* টেক্সটের কালার পরিবর্তন */
+    text-align: center; /* টেক্সট সেন্টার করা */
+}
+
+📌 ২. Background এবং Colors
+
+body {
+    background-color: lightblue; /* পুরো ব্যাকগ্রাউন্ডের রং পরিবর্তন */
+}
+h1 {
+    background-color: yellow; /* হেডিং-এর ব্যাকগ্রাউন্ড রং পরিবর্তন */
+    color: red; /* হেডিং-এর টেক্সট কালার */
+}
+
+📌 ৩. Box Model (Margin, Padding, Border)
+🎤 "CSS-এ প্রতিটি এলিমেন্ট একটি বাক্সের মতো আচরণ করে। এই বাক্সে থাকে – Margin, Border, Padding, এবং Content।"
+
+div {
+    width: 300px; /* div এর প্রস্থ */
+    height: 200px; /* div এর উচ্চতা */
+    padding: 20px; /* ভিতরের স্পেস */
+    margin: 10px; /* বাইরের স্পেস */
+    border: 2px solid black; /* বর্ডার স্টাইল */
+}
+
+✅ Margin: এলিমেন্টের চারপাশে বাহ্যিক স্পেস।
+✅ Padding: এলিমেন্টের ভিতরে স্পেস।
+✅ Border: এলিমেন্টের চারপাশের বর্ডার।
+
+
+---
+
+CSS Layout Techniques (ওয়েব ডিজাইনের জন্য লেআউট ব্যবস্থাপনা)
+
+🎤 "ওয়েবসাইট ডিজাইনে এলিমেন্ট ঠিকভাবে সাজাতে CSS এর Flexbox ও Grid ব্যবহার করা হয়।"
+
+📌 Flexbox (Flexible Layout Design)
+
+.container {
+    display: flex;
+    justify-content: space-between; /* এলিমেন্টগুলো সমান দূরত্বে রাখে */
+}
+.item {
+    width: 30%;
+    background: lightgray;
+    padding: 20px;
+}
+
+📌 Grid Layout (2D Layout System)
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* তিনটি কলাম তৈরি করা */
+}
+
+
+---
+
+CSS Media Queries – Responsive Design
+
+🎤 "ওয়েবসাইট মোবাইল, ট্যাবলেট, ও ডেস্কটপে ভালোভাবে দেখানোর জন্য Media Queries ব্যবহার করা হয়।"
+
+📌 Example:
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+✅ যখন স্ক্রিনের প্রস্থ ৬০০px বা কম হবে, তখন ব্যাকগ্রাউন্ডের রঙ পরিবর্তিত হবে।
+
+
+---
+
+🎯 CSS শেখার পরবর্তী ধাপ
+
+✅ CSS Animation
+✅ CSS Transform & Transition
+✅ Advanced Responsive Design (Flexbox & Grid)
+
+এটি CSS-এর বেসিক ধারণা, যা ওয়েব ডিজাইনের জন্য খুবই গুরুত্বপূর্ণ। আশা করি এটি তোমার জন্য উপকারী হবে!
+
+ ```
+Responsive CSS
+```
+
+🔹 ৬. Responsive Web Design – বিভিন্ন ডিভাইসে ওয়েবসাইট অ্যাডজাস্ট করা [সময়ঃ ৩০ মিনিট]
+
+🎤 "আজ আমরা শিখবো কিভাবে ওয়েবসাইটকে Responsive বানানো যায়, যাতে এটি Mobile, Tablet, এবং Desktop এ সঠিকভাবে দেখা যায়।"
+
+
+---
+
+🔹 Responsive Web Design কি?
+
+📌 Responsive Design মানে হলো, ওয়েবসাইটের লেআউট এমনভাবে তৈরি করা, যাতে এটি ছোট ও বড় স্ক্রিনে ভালোভাবে দেখা যায়।
+📌 Responsive Design তৈরি করতে CSS Media Queries, Flexbox, এবং Grid ব্যবহার করা হয়।
+📌 আমরা Pixels (px) এর পরিবর্তে Percentage (%), Viewport Width (vw), Viewport Height (vh), এবং Relative Units (em, rem, fr) ব্যবহার করবো।
+
+
+---
+
+🔹 CSS Media Queries – স্ক্রিন সাইজ অনুযায়ী ডিজাইন পরিবর্তন করা
+
+🎤 "Media Queries এর মাধ্যমে আমরা নির্দিষ্ট স্ক্রিন সাইজ অনুযায়ী CSS নিয়ম পরিবর্তন করতে পারি।"
+
+✅ Media Query এর ব্যবহার:
+
+📌 🔥 উদাহরণ: স্ক্রিন ছোট হলে ব্যাকগ্রাউন্ড রঙ পরিবর্তন 🔥
+
+body {
+    background-color: lightblue;
+}
+
+/* যখন স্ক্রিনের প্রস্থ ৬০০px এর কম হবে */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+✅ এই কোডে, স্ক্রিন ৬০০px এর কম হলে ব্যাকগ্রাউন্ড রঙ পরিবর্তন হবে।
+
+
+---
+
+🔹 Flexbox ব্যবহার করে Responsive Layout তৈরি করা
+
+🎤 "Flexbox ব্যবহারের মাধ্যমে ওয়েবসাইটের এলিমেন্টগুলোকে Dynamic এবং Responsive করা যায়।"
+
+📌 🔥 উদাহরণ: Responsive Navigation Bar 🔥
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: steelblue;
+    padding: 10px;
+}
+
+/* স্ক্রিন ছোট হলে Navbar কলাম আকারে দেখাবে */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+✅ এই কোডে, বড় স্ক্রিনে Navbar Row-তে থাকবে, কিন্তু ছোট স্ক্রিনে Column আকারে সাজবে।
+
+
+---
+
+🔹 Grid ব্যবহার করে Responsive Layout তৈরি করা
+
+🎤 "CSS Grid এর মাধ্যমে বিভিন্ন স্ক্রিন সাইজ অনুযায়ী Responsive Grid তৈরি করা সম্ভব।"
+
+📌 🔥 উদাহরণ: Responsive ৩ কলামের Layout 🔥
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ৩টি সমান কলাম */
+    gap: 10px;
+}
+
+/* স্ক্রিন ছোট হলে কলাম সংখ্যা কমে যাবে */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* ২টি কলাম */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr); /* ১টি কলাম */
+    }
+}
+
+✅ এই কোডে, বড় স্ক্রিনে ৩ কলাম থাকবে, ট্যাবলেটে ২ কলাম, এবং মোবাইলে ১ কলাম হবে।
+
+
+---
+
+🔹 Responsive Images & Typography
+
+📌 Responsive Images তৈরি করতে max-width: 100%; ব্যবহার করা হয়।
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+📌 Typography Responsive করতে vw ও rem ব্যবহার করা হয়।
+
+h1 {
+    font-size: 5vw; /* স্ক্রিন সাইজ অনুযায়ী ফন্ট সাইজ পরিবর্তন হবে */
+}
+
+
+---
+
+🎯 Responsive Web Design শেখার পরবর্তী ধাপ:
+
+✅ CSS Grid & Flexbox এর মাধ্যমে আরও Advanced Layout তৈরি
+✅ Mobile-First Design Approach
+✅ Bootstrap & TailwindCSS Framework ব্যবহার
+
+🎤 "এইভাবে আমরা Responsive Design তৈরি করতে পারি! এখন আমরা একটি ছোট Responsive Project তৈরি করবো!" 🚀
+
+---
+```
+Project
+```
+
+🔹 Full Modified HTML & CSS Content (Responsive Portfolio Website)
+
+🎤 "এবার আমরা সম্পূর্ণ কোডটি একসাথে লিখবো, যেখানে HTML & CSS এর সব কনসেপ্ট একত্রে থাকবে!" 🚀
+
+
+---
+
+📌 🔥 HTML Code (index.html) 🔥
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <img src="profile.jpg" alt="My Profile">
+            <div>
+                <h2>About Me</h2>
+                <p>I am a web developer with expertise in HTML, CSS, and JavaScript. I create modern and responsive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">Project 1</div>
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+---
+
+📌 🔥 CSS Code (style.css) 🔥
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: lightcoral;
+    padding: 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+/* 🔥 Responsive Design 🔥 */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+---
+
+🎯 Features of this Responsive Portfolio Website:
+
+✅ Header & Navigation Bar: Responsive navbar with smooth alignment
+✅ About Section: Flexbox used for image and text alignment
+✅ Projects Section: CSS Grid used for displaying project cards
+✅ Contact Form: Simple form with input fields and submit button
+✅ CSS Animations: Hover effect on project cards
+✅ Fully Responsive: Media Queries applied for different screen sizes
+
+🎤 "এইভাবে আমরা HTML, CSS, Flexbox, Grid, এবং Animation ব্যবহার করে একটি সম্পূর্ণ Responsive Portfolio Website তৈরি করতে পারলাম!" 🚀
+
+
+
+✅ এই Website মোবাইল, ট্যাবলেট, ও ডেস্কটপে সঠিকভাবে দেখাবে!
+
+
+---
+
+🎯 শেষ ধাপ – রিক্যাপ এবং সামারি
+
+🎤 "আজ আমরা HTML, CSS, Flexbox, Grid, Animation, এবং Responsive Web Design শিখলাম। এখন আমাদের চর্চা চালিয়ে যেতে হবে!" 🚀
+
+✅ HTML & CSS Basics
+✅ CSS Flexbox & Grid
+✅ CSS Animation
+✅ Media Queries & Responsive Design
+✅ Mini Portfolio Website Project
+
+🎤 "আজকের জন্য ধন্যবাদ! সামনে আরও গভীরভাবে JavaScript নিয়ে আলোচনা করবো!" 🎯
